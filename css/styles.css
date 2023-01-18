@@ -1,0 +1,100 @@
+
+
+
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+ }
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #323644;
+
+}
+.plans-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.card{
+
+    background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+    width: 280px;
+    border-radius: 20px;
+    margin-left: 30px;
+    color: white;
+    text-shadow: 2px 2px #434242;
+    box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
+    -moz-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
+    
+    
+}
+
+.card > div{
+    display: grid;
+    place-items: center;
+    padding: 30px;
+  
+
+}
+
+.card:nth-last-of-type(2){
+    background-image: linear-gradient( 109.6deg,  rgba(231,76,60,1) 11.2%, rgba(203,67,53,1) 91.1% );
+
+}
+
+.card:last-of-type{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+}
+
+.plan-list li{
+    list-style: none;
+    line-height: 30px;
+    
+}
+
+.plan-title{
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+
+.plan-title::before{
+    content: "";
+    height:  9px;
+    width: 90px;
+    position: relative;
+    background-color: black;
+}
+
+.plan-price{
+    font-size: 4.5rem;
+    margin: 0;
+
+}
+.plan-price span{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card .plab-btn{
+    justify-content: flex-end;
+    color: black;
+    text-shadow: none;
+    object-fit: cover;
+    font-size: 1.2rem;
+    left: -10%;
+    background-color: aliceblue;
+    border-radius: 0 0 20px 20px ;
+    
+}
+
+
