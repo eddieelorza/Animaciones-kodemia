@@ -25,9 +25,13 @@ body{
 
 }
 .card{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
     width: 280px;
+    height: 400px;
     border-radius: 20px;
     margin-left: 30px;
     color: white;
@@ -35,17 +39,17 @@ body{
     box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
     -webkit-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
     -moz-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.56);
-    
-    
-}
-
-.card > div{
-    display: grid;
-    place-items: center;
+    overflow: hidden;
+    position: relative;
     padding: 30px;
-  
-
 }
+
+.card:hover {
+    transform: scale(1.1);
+    transition: linear 350ms;
+    cursor: pointer;
+  }
+
 
 .card:nth-last-of-type(2){
     background-image: linear-gradient( 109.6deg,  rgba(231,76,60,1) 11.2%, rgba(203,67,53,1) 91.1% );
@@ -85,16 +89,28 @@ body{
     margin: 0;
 }
 
-.card .plab-btn{
-    justify-content: flex-end;
+.plab-btn{
+    display: grid;
+    place-items: center;
     color: black;
     text-shadow: none;
     object-fit: cover;
     font-size: 1.2rem;
-    left: -10%;
+    right:0;
+    bottom: 0;
+    width: 150px;
+    height: 50px;
     background-color: aliceblue;
-    border-radius: 0 0 20px 20px ;
+    border-radius: 20px 0 ;
+    position: absolute !important;
+    cursor: pointer;
     
+}
+
+.plab-btn:hover{
+    transform: scale(1.2);
+    transition: linear 300ms;
+    width: 100%;
 }
 
 
